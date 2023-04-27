@@ -16,7 +16,7 @@ import { DbzModule } from './dbz/dbz.module';
     BrowserModule,
     CounterModule,
     HeroesModule,
-    DbzModule
+    DbzModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
