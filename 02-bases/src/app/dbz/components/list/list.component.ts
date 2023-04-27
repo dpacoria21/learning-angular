@@ -1,4 +1,5 @@
-import {Component} from '@angular/core'
+import {Component, Input} from '@angular/core'
+import { Character } from '../../interfaces/character.interface'
 
 
 @Component ({
@@ -8,4 +9,7 @@ import {Component} from '@angular/core'
 })
 export class ListDBZComponent {
 
+    @Input()
+    public characterList: Character[] = [
+    ];
 }
