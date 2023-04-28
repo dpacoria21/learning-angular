@@ -1,5 +1,6 @@
-import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { FormsModule } from '@angular/forms';
+import { NgModule } from '@angular/core';
 
 
 import { MainPageComponent } from './pages/main-page.component';
@@ -18,7 +19,8 @@ import { AddCharacterComponent } from './components/add-character/add-character.
     ListDBZComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    FormsModule
   ],
   exports: [
     MainPageComponent

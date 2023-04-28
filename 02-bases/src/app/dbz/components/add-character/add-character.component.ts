@@ -1,4 +1,5 @@
 import { Component } from "@angular/core";
+import { Character } from "../../interfaces/character.interface";
 
 
 
@@ -7,4 +8,15 @@ import { Component } from "@angular/core";
     templateUrl: './add-character.component.html',
     styleUrls: ['./add-character.component.css']
 })
-export class AddCharacterComponent {}
+export class AddCharacterComponent {
+
+    public character: Character = {
+        name: '',
+        power: 0
+    }
+
+    addCharacter(): void {
+        console.log(this.character);
+    }
+
+}
