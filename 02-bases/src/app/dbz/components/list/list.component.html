@@ -9,8 +9,13 @@
     let isEven = even;
     let isOdd = odd"
      
-    class="list-group-item"> 
-    <span class="text-primary"> {{i+1}} </span>
+    class="list-group-item"
+    [ngClass] = "{
+        'list-group-item-success': isOdd,
+        'list-group-item-dark': isEven
+    }">
+    
+    <span class="text-primary"></span>
     {{character.name}} - 
     {{character.power}} 
     
