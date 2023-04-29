@@ -9,15 +9,18 @@
     let isEven = even;
     let isOdd = odd"
      
-    class="list-group-item"
+    class="list-group-item d-flex justify-content-between"
     [ngClass] = "{
         'list-group-item-success': isOdd,
         'list-group-item-dark': isEven
     }">
     
-    <span class="text-primary"></span>
-    {{character.name}} - 
-    {{character.power}} 
-    
+    <div>
+        <span class="text-primary"></span>
+        {{character.name}} -
+        {{character.power}}
+    </div>  
+    <button class="btn btn-danger" (click)="onDeleteCharacter(i)">X</button>
     </li>
+
 </ul>

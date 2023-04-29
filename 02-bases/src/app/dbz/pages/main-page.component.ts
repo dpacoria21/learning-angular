@@ -26,6 +26,12 @@ export class MainPageComponent {
 
     recibirCharacter(character: Character): void {
         console.log(character, '  main Page');
+        const {name, power} = character;
+        this.characters.push({name, power});
+    }
+
+    onDeleteCharacter(id: number): void {
+        this.characters.splice(id, 1);
     }
 
 }
