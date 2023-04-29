@@ -15,7 +15,8 @@ export class ListDBZComponent {
     @Output()
     public onDeleteId: EventEmitter<string> = new EventEmitter();
 
-    onDeleteCharacter(id: string): void {
+    onDeleteCharacter(id?: string): void {
+        if(!id) return;
         this.onDeleteId.emit(id);
     }
 }
